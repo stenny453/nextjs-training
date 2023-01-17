@@ -4,7 +4,7 @@ import Head from 'next/head';
 // import Script from 'next/script';
 import Layout from '../../components/layout';
 
-export default function FirstPost() {
+export default function FirstPost(props) {
   return (
       <Layout>
         <Head>
@@ -21,3 +21,21 @@ export default function FirstPost() {
     </Layout>
   );
 }
+
+export async function getStaticProps() {
+  const data = [];
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {
+//       // props for your component
+//     },
+//   };
+// }
