@@ -13,11 +13,11 @@ import PropTypes from 'prop-types';
  */
 
 export default function Date({ dateString }) {
-  const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
+  // const date = parseISO(dateString);
+  // return <time dateTime={dateString}>{format(dateString, 'LLLL d, yyyy')}</time>;
+  return <b>{ dateString }</b>
 }
 
 Date.propTypes = {
-  dateString: PropTypes.string,
-  type: PropTypes.oneOf(['a', 'b', 'c', 'd', 'e', 'f'])
+  dateString: PropTypes.string
 }

@@ -22,7 +22,9 @@ export default {
 }
 
 const Template = (args) => (
-    <div>{JSON.stringify(args)}</div>
+    <div>
+        <Date dateString="2020-01-01" />
+    </div>
 )
 
 export const Default = Template.bind({})
